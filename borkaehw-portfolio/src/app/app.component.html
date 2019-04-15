@@ -1,3 +1,5 @@
+<button class="btn btn-primary" (click)="setChinese()">中文</button>
+<button class="btn btn-primary" (click)="setEnglish()">English</button>
 <app-jumbotron section="work"></app-jumbotron>
 <div class="container">        
   <div class="row">
@@ -10,4 +12,9 @@
 <app-jumbotron section="projects"></app-jumbotron>
 <app-jumbotron section="skills"></app-jumbotron>
 <app-jumbotron section="biography"></app-jumbotron>
+<div class="container">        
+  <div class="row">
+    <app-biography [language]="language"></app-biography>
+  </div>
+</div>
 <app-jumbotron section="hobbies"></app-jumbotron>

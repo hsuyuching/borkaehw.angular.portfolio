@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'borkaehw-portfolio';
+  language = 'en';
+  setEnglish() {
+    this.language = 'en';
+  }
+  setChinese() {
+    this.language = 'ch';
+  }
 }

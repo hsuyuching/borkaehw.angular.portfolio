@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WorkComponent } from './work/work.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { BiographyComponent } from './biography/biography.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WorkComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    BiographyComponent
   ],
   imports: [
     BrowserModule,
