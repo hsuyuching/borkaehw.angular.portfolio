@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { WorkComponent } from './work/work.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { BiographyComponent } from './biography/biography.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WorkComponent,
     JumbotronComponent,
-    BiographyComponent
+    BiographyComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
