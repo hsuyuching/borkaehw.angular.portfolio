@@ -1,0 +1,10 @@
+<div>             
+  <img [src]="works.get(name).getOrgLogoPath()">
+  <h2>{{ works.get(name).getOrgName() }}</h2>    
+  <p>{{ works.get(name).getOrgLocationString() }}</p>
+  <p>{{ works.get(name).getWorkPeriod() }}</p>
+  <p>{{ works.get(name).getDescription() }}</p>
+  <p *ngFor="let link of works.get(name).getLinks()">
+    <a [href]="link['link']" target="_blank">{{ link['linkName'] }}</a>
+  </p>
+</div>
