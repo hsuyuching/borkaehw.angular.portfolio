@@ -7,31 +7,38 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class JumbotronComponent implements OnInit {
   @Input() section: string;
+  @Input() language: string;
 
   sections = {
     'work': {
       'icon': 'fa fa-briefcase fa-1x',
-      'head': 'Work Experience',
+      'headEnglish': 'Work Experience',
+      'headChinese': '工作經驗',
     },
     'education': {
       'icon': 'fa fa-university fa-1x',
-      'head': 'Education',
+      'headEnglish': 'Education',
+      'headChinese': '學歷',
     },
     'projects': {
       'icon': 'fa fa-laptop fa-1x',
-      'head': 'Projects',
+      'headEnglish': 'Projects',
+      'headChinese': '專題',
     },
     'skills': {
       'icon': 'fa fa-thumbs-o-up fa-1x',
-      'head': 'Skills',
+      'headEnglish': 'Skills',
+      'headChinese': '專業技能',
     },
     'biography': {
       'icon': 'fa fa-pencil fa-1x',
-      'head': 'Biography',
+      'headEnglish': 'Biography',
+      'headChinese': '自傳',
     },
     'hobbies': {
       'icon': 'fa fa-paper-plane-o fa-1x',
-      'head': 'Hobbies',
+      'headEnglish': 'Hobbies',
+      'headChinese': '嗜好',
     },
   }
 

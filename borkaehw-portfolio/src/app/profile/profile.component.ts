@@ -8,8 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProfileComponent implements OnInit {
   @Input() language: string;
 
-  nameEnglish = 'Kevin Hwang';
-  nameChinese = '黃柏愷';
   shortIntroEnglish = 'A software engineer in Salt Lake City, Utah';
   shortIntroChinese = '在鹽湖城的軟體工程師';
   introEnglish = 'Hello, I am Kevin. I love to write codes, take photos, and make videos. I also have a Youtube channel for all the travel vlogs.';

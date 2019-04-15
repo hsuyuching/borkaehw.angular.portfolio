@@ -1,7 +1,8 @@
+<app-navbar [language]="language"></app-navbar>
 <button class="btn btn-primary" (click)="setChinese()">中文</button>
 <button class="btn btn-primary" (click)="setEnglish()">English</button>
-<app-profile  [language]="language"></app-profile>
-<app-jumbotron section="work"></app-jumbotron>
+<app-profile [language]="language"></app-profile>
+<app-jumbotron section="work" [language]="language"></app-jumbotron>
 <div class="container">        
   <div class="row">
     <app-work class="col-md-6 my-4" name="lucid"></app-work>
@@ -9,13 +10,13 @@
     <app-work class="col-md-6 my-4" name="clinc"></app-work>
   </div>
 </div>
-<app-jumbotron section="education"></app-jumbotron>
-<app-jumbotron section="projects"></app-jumbotron>
-<app-jumbotron section="skills"></app-jumbotron>
-<app-jumbotron section="biography"></app-jumbotron>
+<app-jumbotron section="education" [language]="language"></app-jumbotron>
+<app-jumbotron section="projects" [language]="language"></app-jumbotron>
+<app-jumbotron section="skills" [language]="language"></app-jumbotron>
+<app-jumbotron section="biography" [language]="language"></app-jumbotron>
 <div class="container">        
   <div class="row">
     <app-biography [language]="language"></app-biography>
   </div>
 </div>
-<app-jumbotron section="hobbies"></app-jumbotron>
+<app-jumbotron section="hobbies" [language]="language"></app-jumbotron>
