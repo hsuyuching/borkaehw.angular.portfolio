@@ -1,7 +1,5 @@
-<app-navbar [language]="language"></app-navbar>
+<app-navbar [language]="language" (setLanguage)="setLanguageHandler($event)"></app-navbar>
 <div style="height:60px; width:100%; clear:both;"></div>
-<button *ngIf="language === 'en'" class="btn btn-primary" (click)="setChinese()">中文</button>
-<button *ngIf="language === 'ch'" class="btn btn-primary" (click)="setEnglish()">English</button>
 <app-profile [language]="language"></app-profile>
 <app-jumbotron id="work" section="work" [language]="language"></app-jumbotron>
 <div class="container">        

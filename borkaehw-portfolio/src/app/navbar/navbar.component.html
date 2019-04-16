@@ -14,4 +14,6 @@
       </li>
     </ul>
   </div>
+  <button *ngIf="language === 'en'" class="btn btn-primary" (click)="setChinese()">中文</button>
+  <button *ngIf="language === 'ch'" class="btn btn-primary" (click)="setEnglish()">English</button>
 </nav>

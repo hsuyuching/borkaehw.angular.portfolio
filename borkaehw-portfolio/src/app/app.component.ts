@@ -7,10 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   language = 'en';
-  setEnglish() {
-    this.language = 'en';
-  }
-  setChinese() {
-    this.language = 'ch';
+  setLanguageHandler(language: string) {
+    this.language = language;
   }
 }
