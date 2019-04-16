@@ -1,0 +1,8 @@
+<div class="service-item">
+  <span class="fa-stack fa-4x">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i [class]="skills.get(name).getSkillClass()"></i>
+  </span>
+  <h3>{{ skills.get(name).getSkillTitle() }}</h3>
+  <p>{{ skills.get(name).getSkillItems() }}</p>
+</div>

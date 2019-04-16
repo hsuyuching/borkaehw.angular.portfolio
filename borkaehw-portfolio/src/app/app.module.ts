@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectComponent } from './project/project.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProjectComponent } from './project/project.component';
     ProfileComponent,
     NavbarComponent,
     EducationComponent,
-    ProjectComponent
+    ProjectComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
