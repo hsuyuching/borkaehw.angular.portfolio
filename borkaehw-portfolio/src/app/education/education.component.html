@@ -1,0 +1,19 @@
+<div class="bg-container">
+  <div class="card card-block">
+    <div class="card-block">        
+      <img class="school-logo" [src]="educations.get(name).getSchoolLogoPath()">
+      <h2>{{ educations.get(name).getSchoolName() }}</h2>
+      <h5>{{ educations.get(name).getDegree() }}</h5>
+      <p>{{ educations.get(name).getSchoolLocationString() }}</p>
+      <p>{{ educations.get(name).getSchoolPeriod() }}</p>
+      <p>
+        <span>GPA {{ educations.get(name).getGPA() }}</span>
+        <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="out of 4.0" aria-hidden="true"></i>
+      </p>
+      <h5>Courses</h5>
+      <ul>
+        <li *ngFor="let course of educations.get(name).getCourses()">{{ course }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

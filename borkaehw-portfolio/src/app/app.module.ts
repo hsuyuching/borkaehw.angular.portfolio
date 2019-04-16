@@ -9,6 +9,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { BiographyComponent } from './biography/biography.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     JumbotronComponent,
     BiographyComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
