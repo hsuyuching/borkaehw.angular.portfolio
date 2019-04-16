@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillComponent } from './skill/skill.component';
+import { HobbyComponent } from './hobby/hobby.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { SkillComponent } from './skill/skill.component';
     NavbarComponent,
     EducationComponent,
     ProjectComponent,
-    SkillComponent
+    SkillComponent,
+    HobbyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
