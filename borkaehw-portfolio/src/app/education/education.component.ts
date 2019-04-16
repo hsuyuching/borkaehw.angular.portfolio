@@ -26,6 +26,8 @@ export class EducationComponent implements OnInit {
     nthu.setSchoolPeriod('September 2011', 'June 2015');
     um.setGPA(3.86);
     nthu.setGPA(4.05);
+    um.setGPAScale('out of 4.0');
+    nthu.setGPAScale('out of 4.3');
     um.setCourses([
       'Operating Systems',
       'Database Management Systems',
@@ -61,6 +63,7 @@ class Education {
   startDate: string;
   endDate: string;
   GPA: number;
+  GPAScala: string;
   courses: string[];
 
   setSchoolLogoPath(schoolLogoPath: string) {
@@ -105,6 +108,12 @@ class Education {
   }
   getGPA() {
     return this.GPA;
+  }
+  setGPAScale(GPAScala: string) {
+    this.GPAScala = GPAScala;
+  }
+  getGPAScale() {
+    return this.GPAScala;
   }
   setCourses(courses: string[]) {
     this.courses = courses;
