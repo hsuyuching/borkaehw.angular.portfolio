@@ -1,18 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="#" *ngIf="language === 'en'">{{ nameEnglish }}</a>
   <a class="navbar-brand" href="#" *ngIf="language === 'ch'">{{ nameChinese }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav" *ngIf="language === 'en'">
-      <li class="nav-item" *ngFor="let category of categoriesEnglish">
-        <a class="nav-link" href="#">{{ category }}</a>
+      <li class="nav-item" *ngFor="let category of categoriesEnglish; let i = index">
+        <a class="nav-link" [href]="href[i]">{{ category }}</a>
       </li>
     </ul>
     <ul class="navbar-nav" *ngIf="language === 'ch'">
-      <li class="nav-item" *ngFor="let category of categoriesChinese">
-        <a class="nav-link" href="#">{{ category }}</a>
+      <li class="nav-item" *ngFor="let category of categoriesChinese; let i = index">
+        <a class="nav-link" [href]="href[i]">{{ category }}</a>
       </li>
     </ul>
   </div>

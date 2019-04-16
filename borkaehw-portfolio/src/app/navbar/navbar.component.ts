@@ -11,6 +11,14 @@ export class NavbarComponent implements OnInit {
   nameEnglish = 'Kevin Hwang';
   nameChinese = '黃柏愷';
 
+  href = [
+    '#work',
+    '#education',
+    '#projects',
+    '#skills',
+    '#biography',
+    '#hobbies'
+  ];
   categoriesEnglish = [
     'Work',
     'Education',

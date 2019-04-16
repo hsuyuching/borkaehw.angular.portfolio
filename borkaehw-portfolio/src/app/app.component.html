@@ -1,8 +1,9 @@
 <app-navbar [language]="language"></app-navbar>
-<button class="btn btn-primary" (click)="setChinese()">中文</button>
-<button class="btn btn-primary" (click)="setEnglish()">English</button>
+<div style="height:60px; width:100%; clear:both;"></div>
+<button *ngIf="language === 'en'" class="btn btn-primary" (click)="setChinese()">中文</button>
+<button *ngIf="language === 'ch'" class="btn btn-primary" (click)="setEnglish()">English</button>
 <app-profile [language]="language"></app-profile>
-<app-jumbotron section="work" [language]="language"></app-jumbotron>
+<app-jumbotron id="work" section="work" [language]="language"></app-jumbotron>
 <div class="container">        
   <div class="row">
     <app-work class="col-md-6 my-4" name="lucid"></app-work>
@@ -10,14 +11,14 @@
     <app-work class="col-md-6 my-4" name="clinc"></app-work>
   </div>
 </div>
-<app-jumbotron section="education" [language]="language"></app-jumbotron>
+<app-jumbotron id="education" section="education" [language]="language"></app-jumbotron>
 <div class="container">        
   <div class="row">
     <app-education class="col-md-6" name="um" [language]="language"></app-education>
     <app-education class="col-md-6" name="nthu" [language]="language"></app-education>
   </div>
 </div>
-<app-jumbotron section="projects" [language]="language"></app-jumbotron>
+<app-jumbotron id="projects" section="projects" [language]="language"></app-jumbotron>
 <div class="container">        
   <div class="row">
     <app-project class="col-md-6" name="p4" [language]="language"></app-project>
@@ -26,7 +27,7 @@
     <app-project class="col-md-6" name="p1" [language]="language"></app-project>
   </div>
 </div>
-<app-jumbotron section="skills" [language]="language"></app-jumbotron>
+<app-jumbotron id="skills" section="skills" [language]="language"></app-jumbotron>
 <div class="container text-center">        
   <div class="row">
     <app-skill class="col-md-3 col-sm-6" name="lang"></app-skill>
@@ -35,11 +36,11 @@
     <app-skill class="col-md-3 col-sm-6" name="tool"></app-skill>
   </div>
 </div>
-<app-jumbotron section="biography" [language]="language"></app-jumbotron>
+<app-jumbotron id="biography" section="biography" [language]="language"></app-jumbotron>
 <div class="container">        
   <div class="row">
     <app-biography [language]="language"></app-biography>
   </div>
 </div>
-<app-jumbotron section="hobbies" [language]="language"></app-jumbotron>
+<app-jumbotron id="hobbies" section="hobbies" [language]="language"></app-jumbotron>
 <app-hobby></app-hobby>
