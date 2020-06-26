@@ -30,7 +30,7 @@ export class EducationComponent implements OnInit {
     uu.setSchoolPeriod('August 2019', 'April 2021');
     yzu_ms.setSchoolPeriod('August 2018', 'June 2019');
     yzu_bs.setSchoolPeriod('August 2014', 'June 2018');
-    uu.setGPA(3.2);
+    uu.setGPA(3.62);
     yzu_ms.setGPA(4.0);
     yzu_bs.setGPA(3.77);
     uu.setGPAScale('out of 4.0');
@@ -39,8 +39,8 @@ export class EducationComponent implements OnInit {
     uu.setCourses([
       'Data Mining',
       'Computer Vision',
-      'Intro to Info Retrieval',
-      'Natural Language',
+      'Information Retrieval',
+      'Natural Language Processing',
       'Advanced Algorithms',
       'Visualization for Data Science'
     ]);
