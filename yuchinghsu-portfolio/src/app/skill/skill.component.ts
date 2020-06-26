@@ -22,13 +22,13 @@ export class SkillComponent implements OnInit {
     web.setSkillClass('fa fa-cloud fa-stack-1x text-primary');
     tool.setSkillClass('fa fa-wrench fa-stack-1x text-primary');
     lang.setSkillTitle('Languages');
-    library.setSkillTitle('Library');
+    library.setSkillTitle('DataBase');
     web.setSkillTitle('Web');
     tool.setSkillTitle('Tools');
-    lang.setSkillItems('Python, C/C++, Javascript, Matlab');
-    library.setSkillItems('OpenCV, Keras, Tensorflow');
-    web.setSkillItems('HTML, CSS, D3, Bootstrap');
-    tool.setSkillItems('Git, MFC(visual studio), Galago');
+    lang.setSkillItems('Python, C/C++, Javascript, Java, Matlab');
+    library.setSkillItems('MongoDB');
+    web.setSkillItems('HTML, CSS, D3, AngularJS, Bootstrap');
+    tool.setSkillItems('OpenCV, Keras, Tensorflow, Git, MFC(visual studio), Galago');
     this.skills.set('lang', lang);
     this.skills.set('library', library);
     this.skills.set('web', web);
