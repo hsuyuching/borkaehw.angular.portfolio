@@ -14,6 +14,8 @@ import { EducationComponent } from './education/education.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillComponent } from './skill/skill.component';
 import { HobbyComponent } from './hobby/hobby.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MatVideoModule } from 'mat-video';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HobbyComponent } from './hobby/hobby.component';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    // MatVideoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

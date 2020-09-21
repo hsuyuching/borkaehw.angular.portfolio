@@ -27,7 +27,7 @@ export class EducationComponent implements OnInit {
     uu.setSchoolLocation('Salt Lake City', 'UT', 'USA');
     yzu_ms.setSchoolLocation('Taoyuan', '', 'Taiwan');
     yzu_bs.setSchoolLocation('Taoyuan', '', 'Taiwan');
-    uu.setSchoolPeriod('August 2019', 'April 2021');
+    uu.setSchoolPeriod('August 2019', 'May 2021');
     yzu_ms.setSchoolPeriod('August 2018', 'June 2019');
     yzu_bs.setSchoolPeriod('August 2014', 'June 2018');
     uu.setGPA(3.62);
@@ -37,12 +37,10 @@ export class EducationComponent implements OnInit {
     yzu_ms.setGPAScale('out of 4.0');
     yzu_bs.setGPAScale('out of 4.0');
     uu.setCourses([
-      'Data Mining',
-      'Computer Vision',
-      'Information Retrieval',
-      'Natural Language Processing',
-      'Advanced Algorithms',
-      'Visualization for Data Science'
+      'Advanced Algorithms','Computer Architecture',
+      'Data Mining','Computer Vision','Information Retrieval','Natural Language Processing',
+      'Visualization for Data Science',
+      'Web Browser Internals', 'Deep Learning'
     ]);
     yzu_ms.setCourses([
       'Mobile Big Data Analysis and Machine Learning',

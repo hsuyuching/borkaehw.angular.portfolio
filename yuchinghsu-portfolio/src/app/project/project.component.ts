@@ -39,7 +39,15 @@ export class ProjectComponent implements OnInit {
     p3.setDescription('Besides the technique for human face detection, we added the upper body information to help identify the paired face in multi-camera. With analysis in feature comparison between different color spaces, and the calibration between different cameras, we can improve the accuracy in the detection of pairing face.');
     p2.setDescription('We designed the algorithm, which can localize (with 95.8% accuracy) and recognize (with 100% accuracy) the button with combining of PAC, KBC, TM, CNN and finally, SSIM. With the method, we can strengthen the robot indoor navigation ability.');
     p1.setDescription('Developed Logitech\'s internal analysis tool for image quality team to better control auto focus, auto white balance, auto exposure. Achieved real-time manipulation in video between hardware control and software visualization.');
-    
+
+    p1.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    // p2.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    // p3.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    // p4.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    // p5.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    // p6.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+
+
     this.projects.set('p6', p6);
     this.projects.set('p5', p5);
     this.projects.set('p4', p4);
@@ -57,6 +65,7 @@ class Project {
   projectImgPath: string;
   title: string;
   description: string;
+  links = [];
 
   setProjectImgPath(projectImgPath: string) {
     this.projectImgPath = projectImgPath;
@@ -75,5 +84,14 @@ class Project {
   }
   getDescription() {
     return this.description;
+  }
+  setLinks(link: string, linkName: string) {
+    this.links.push({
+      'link': link,
+      'linkName': linkName
+    });
+  }
+  getLinks() {
+    return this.links;
   }
 }

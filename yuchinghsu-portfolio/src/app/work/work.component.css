@@ -2,3 +2,13 @@ img {
     height: 100px;
     margin: 0px;
 }
+.leftside {
+  float: left;
+  width: 40%;
+}
+.rightside {
+  float: right;
+  margin-left: auto;
+  margin-top: auto;
+  width: 50%;
+}

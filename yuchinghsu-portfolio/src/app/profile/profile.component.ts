@@ -8,24 +8,30 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProfileComponent implements OnInit {
   @Input() language: string;
 
-  shortIntroEnglish = 'Software & Hardware Engineer in Utah';
-  shortIntroChinese = '在猶他州的軟體 & 硬體工程師';
-  introEnglish = 'Hi, I love music and coding. With 2 master degrees in both Computer Science and Electrical Engineering, I can build a robot, and develop any application run on the top. Enjoy!';
-  introChinese = '';
+  shortIntroEnglish = 'Software Engineer';
+  nameEnglish = 'Yu-Ching (Ruby) Hsu\'s website';
+  shortIntroChinese = '軟體工程師';
+  introEnglish = 'Hi, I\'m a self-motivated quick learner with a strong sense of urgency. \
+  I have hands-on developing experience include Algorithm, Firmware, Image Processing, and data analysis,\
+   as well as root cause analysis skill in mixed HW/SW issues.\
+   I have 5 years research experience in computer vision, 2 paper published, 3 years experience in machine learning (CNN, Faster-RCNN).\
+   I\'m also an illustrator, hope you enjoy the website!';
+  introChinese = '我喜歡畫畫，同時也是軟體工程師。擁有5年computer vision的相關研究經歷，3篇論文發表。';
   mobile = '+1 (801) 815-6372';
-  email = 'yuching.hsu@utah.edu';
+  email = 'hsuyuching95@gmail.com';
+  nameChinese = '許予晴(Ruby Hsu)';
   links = [
     {
       'class': 'linkedin my-link',
       'url': 'https://www.linkedin.com/in/yuchinghsu',
       'iconClass': 'fa fa-linkedin fa-2x'
     }
-    // ,
-    // {
-    //   'class': 'github my-link',
-    //   'url': 'https://github.com/borkaehw',
-    //   'iconClass': 'fa fa-github fa-2x'
-    // },
+    ,
+    {
+      'class': 'github my-link',
+      'url': 'https://github.com/hsuyuching',
+      'iconClass': 'fa fa-github fa-2x'
+    },
     // {
     //   'class': 'youtube my-link',
     //   'url': 'https://www.youtube.com/channel/UCF0isvgYaaTVXBtUihQNiUQ',

@@ -1,10 +1,17 @@
-<div>             
-  <img [src]="works.get(name).getOrgLogoPath()">
-  <h2>{{ works.get(name).getOrgName() }}</h2>    
-  <p>{{ works.get(name).getOrgLocationString() }}</p>
-  <p>{{ works.get(name).getWorkPeriod() }}</p>
-  <p>{{ works.get(name).getDescription() }}</p>
-  <p *ngFor="let link of works.get(name).getLinks()">
-    <a [href]="link['link']" target="_blank">{{ link['linkName'] }}</a>
-  </p>
+<div class="row">
+  <div class="leftside">
+    <img [src]="works.get(name).getOrgLogoPath()">
+    <h2>{{ works.get(name).getOrgName() }}</h2>
+    <p>{{ works.get(name).getOrgLocationString() }}</p>
+    <p>{{ works.get(name).getWorkPeriod() }}</p>
+    <p>{{ works.get(name).getDescription() }}</p>
+    <p *ngFor="let link of works.get(name).getLinks()">
+      <a [href]="link['link']" target="_blank">{{ link['linkName'] }}</a>
+    </p>
+  </div>
+  <div class="rightside">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed//IKfHjiEIFts" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
+
+
