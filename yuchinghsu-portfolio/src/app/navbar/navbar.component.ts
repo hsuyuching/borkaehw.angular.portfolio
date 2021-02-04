@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
     this.newLanguage();
   }
 
-  nameEnglish = 'Ruby Hsu';
+  nameEnglish = 'Yuching Hsu (Ruby)';
   nameChinese = '許予晴';
 
   href = [

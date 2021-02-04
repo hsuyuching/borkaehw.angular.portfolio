@@ -1,6 +1,6 @@
 <div class="bg-container">
   <div class="card card-block">
-    <div class="card-block">        
+    <div class="card-block">
       <img class="school-logo" [src]="educations.get(name).getSchoolLogoPath()">
       <h2>{{ educations.get(name).getSchoolName() }}</h2>
       <h5>{{ educations.get(name).getDegree() }}</h5>
@@ -10,10 +10,10 @@
         <span>GPA {{ educations.get(name).getGPA() }} </span>
         <i class="fa fa-question-circle" placement="right" [ngbTooltip]="educations.get(name).getGPAScale()" aria-hidden="true"></i>
       </p>
-      <h5>Courses</h5>
+      <!-- <h5>Courses</h5>
       <ul>
         <li *ngFor="let course of educations.get(name).getCourses()">{{ course }}</li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </div>

@@ -4,13 +4,25 @@
     <h2>{{ works.get(name).getOrgName() }}</h2>
     <p>{{ works.get(name).getOrgLocationString() }}</p>
     <p>{{ works.get(name).getWorkPeriod() }}</p>
-    <p>{{ works.get(name).getDescription() }}</p>
-    <p *ngFor="let link of works.get(name).getLinks()">
+    <!-- <ul>{{ works.get(name).getDescription() }}</ul> -->
+    <ul>
+      <li>Developed a real-time data visualization platform to accelerate the development process for image quality tuning with MVC pattern.</li>
+      <li>Extended compatibility of the platform to any Logitect camera by designing a byte-mapping configuration mechanism in firmware.</li>
+      <li>Converted MATLAB code into Python and performed unit tests to verify the both versions.</li>
+      <li>Developed a human face detection algorithm to improve the auto focus.</li>
+    </ul>
+    <!-- <p *ngFor="let link of works.get(name).getLinks()">
       <a [href]="link['link']" target="_blank">{{ link['linkName'] }}</a>
-    </p>
+    </p> -->
   </div>
   <div class="rightside">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed//IKfHjiEIFts" frameborder="0" allowfullscreen></iframe>
+    <h4>Real-time Data Visualization Platform</h4>
+    <p>Language Used: C/C++ <br>
+      Framework: MFC<br>
+      Full demo: <a href="https://www.youtube.com/embed//IKfHjiEIFts">link</a>
+    </p>
+    <img src="assets/logiProject.gif" alt="Tool Demo">
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed//IKfHjiEIFts" frameborder="0" allowfullscreen></iframe> -->
   </div>
 </div>
 

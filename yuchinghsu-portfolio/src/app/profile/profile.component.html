@@ -3,19 +3,40 @@
     <div class="col-md-7">
       <div *ngIf="language === 'en'">
         <h1>{{ shortIntroEnglish }}</h1>
-        <p>{{ introEnglish }}</p>
+        <h5>Actively looking for SDE position</h5>
+        <!-- <p>{{ introEnglish }}</p> -->
+        <p>
+          <br> Hi, I'm a self-motivated quick learner that improve myself a little bit everyday.
+          I have hands-on developing experience including <b>Full Stack</b> application development,
+          <b>Web app</b> development, <b>Image Processing/Computer vision</b>, <b>Data Analysis</b>,
+           and <b>Machine Learning</b>.
+        </p>
+        <p>
+          I have 3 years experience in machine learning (CNN, Faster-RCNN). And I have a few fancy projects,
+          check them out below!
+        </p>
       </div>
       <div *ngIf="language === 'ch'">
         <h1>{{ nameChinese }}</h1>
         <h3>{{ shortIntroChinese }}</h3>
         <p>{{ introChinese }}</p>
       </div>
-      <p>{{ mobile }}</p>
-      <p>{{ email }}</p>
+      <p>Mobile: {{ mobile }}</p>
+      <p>Email: {{ email }}</p>
       <p>
-        <a *ngFor="let link of links" [class]="link['class']" [href]="link['url']" target="_blank">
-            <i [class]="link['iconClass']" aria-hidden="true"></i>
+        <a href="https://github.com/hsuyuching">
+          <i class="fa fa-github fa-1x"></i>
+          https://github.com/hsuyuching
         </a>
+        <br>
+        <a href="https://www.linkedin.com/in/yuchinghsu/">
+          <i class="fa fa-linkedin fa-1x"></i>
+          https://www.linkedin.com/in/yuchinghsu/
+        </a>
+
+        <!-- <a *ngFor="let link of links" [class]="link['class']" [href]="link['url']" target="_blank">
+            <i [class]="link['iconClass']" aria-hidden="true"></i>
+        </a> -->
       </p>
 
       <p>

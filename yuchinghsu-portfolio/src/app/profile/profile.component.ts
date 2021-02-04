@@ -11,7 +11,7 @@ export class ProfileComponent implements OnInit {
   shortIntroEnglish = 'Software Engineer';
   nameEnglish = 'Yu-Ching (Ruby) Hsu\'s website';
   shortIntroChinese = '軟體工程師';
-  introEnglish = 'Hi, I\'m a self-motivated quick learner with a strong sense of urgency. \
+  introEnglish = 'Hi, I\'m a self-motivated quick learner. \
   I have hands-on developing experience include Algorithm, Firmware, Image Processing, and data analysis,\
    as well as root cause analysis skill in mixed HW/SW issues.\
    I have 5 years research experience in computer vision, 2 paper published, 3 years experience in machine learning (CNN, Faster-RCNN).\

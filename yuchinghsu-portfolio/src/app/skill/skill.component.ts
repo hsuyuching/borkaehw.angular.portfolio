@@ -17,18 +17,21 @@ export class SkillComponent implements OnInit {
     let tool = new Skill();
     let library = new Skill();
 
-    lang.setSkillClass('fa fa-code fa-stack-1x text-primary');
-    library.setSkillClass('fa fa-database fa-stack-1x text-primary');
-    web.setSkillClass('fa fa-cloud fa-stack-1x text-primary');
-    tool.setSkillClass('fa fa-wrench fa-stack-1x text-primary');
     lang.setSkillTitle('Languages');
+    lang.setSkillClass('fa fa-code fa-stack-1x text-primary');
+    lang.setSkillItems('Python, C/C++, PHP, Javascript, Java, Matlab, TypeScript, HTML, CSS');
+
     library.setSkillTitle('DataBase');
-    web.setSkillTitle('Web');
-    tool.setSkillTitle('Tools');
-    lang.setSkillItems('Python, C/C++, Javascript, Java, Matlab');
-    library.setSkillItems('MongoDB');
-    web.setSkillItems('HTML, CSS, D3, AngularJS, Bootstrap');
-    tool.setSkillItems('OpenCV, Keras, Tensorflow, Git, MFC(visual studio), Galago');
+    library.setSkillClass('fa fa-database fa-stack-1x text-primary');
+    library.setSkillItems('MongoDB, MySQL');
+
+    web.setSkillTitle('Framework');
+    web.setSkillItems('Angular, MFC, Node.js');
+    web.setSkillClass('fa fa-sitemap fa-stack-1x text-primary');
+
+    tool.setSkillClass('fa fa-wrench fa-stack-1x text-primary');
+    tool.setSkillTitle('Library & Tools');
+    tool.setSkillItems('AWS EC2, D3, OpenCV, Keras, Tensorflow, PyTorch, Git');
     this.skills.set('lang', lang);
     this.skills.set('library', library);
     this.skills.set('web', web);

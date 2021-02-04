@@ -1,10 +1,8 @@
 <div >
   <img class="project-img img-responsive" [src]="projects.get(name).getProjectImgPath()" alt="">
-  <h3>{{ projects.get(name).getTitle() }}
-    <!-- <p *ngFor="let link of projects.get(name).getLinks()">
-    <a [href]="link['link']" target="_blank">{{ projects.get(name).getTitle() }}  </a>
-    </p> -->
-  </h3>
 
-  <p>{{ projects.get(name).getDescription() }}</p>
+  <!-- <h3 *ngIf="!projects.get(name).getHasLink()">{{ projects.get(name).getTitle() }}</h3> -->
+  <h3>{{ projects.get(name).getTitle() }}</h3>
+  <a *ngIf="projects.get(name).getHasLink()" [href]="projects.get(name).getLink()" target="_blank"><h5>Project Link: {{projects.get(name).getLink()}}</h5></a>
+  <p class='project-description'>{{ projects.get(name).getDescription() }}</p>
 </div>

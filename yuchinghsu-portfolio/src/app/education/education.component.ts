@@ -27,10 +27,10 @@ export class EducationComponent implements OnInit {
     uu.setSchoolLocation('Salt Lake City', 'UT', 'USA');
     yzu_ms.setSchoolLocation('Taoyuan', '', 'Taiwan');
     yzu_bs.setSchoolLocation('Taoyuan', '', 'Taiwan');
-    uu.setSchoolPeriod('August 2019', 'May 2021');
+    uu.setSchoolPeriod('August 2019', 'Expected in May 2021');
     yzu_ms.setSchoolPeriod('August 2018', 'June 2019');
     yzu_bs.setSchoolPeriod('August 2014', 'June 2018');
-    uu.setGPA(3.62);
+    uu.setGPA(3.74);
     yzu_ms.setGPA(4.0);
     yzu_bs.setGPA(3.77);
     uu.setGPAScale('out of 4.0');
@@ -43,16 +43,16 @@ export class EducationComponent implements OnInit {
       'Web Browser Internals', 'Deep Learning'
     ]);
     yzu_ms.setCourses([
-      'Mobile Big Data Analysis and Machine Learning',
-      'Neural Network',
-      'Deep Learning and its Vision Applications'
+      // 'Mobile Big Data Analysis and Machine Learning',
+      // 'Neural Network',
+      // 'Deep Learning and its Vision Applications'
     ]);
     yzu_bs.setCourses([
-      'Digital Signal Processing',
-      'Operating Systems',
-      'Data Structures',
-      'Computer Architecture',
-      'Digital Signal Processing'
+      // 'Digital Signal Processing',
+      // 'Operating Systems',
+      // 'Data Structures',
+      // 'Computer Architecture',
+      // 'Digital Signal Processing'
     ]);
     this.educations.set('uu', uu);
     this.educations.set('yzu_ms', yzu_ms);

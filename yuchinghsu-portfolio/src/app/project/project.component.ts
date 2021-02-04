@@ -19,6 +19,25 @@ export class ProjectComponent implements OnInit {
     let p2 = new Project();
     let p1 = new Project();
 
+    let p_metflix = new Project();
+    p_metflix.setProjectImgPath('assets/img/metflix.gif');
+    p_metflix.setTitle("Video Streaming Platform Development");
+    p_metflix.setHasLink(true);
+    p_metflix.setLink("https://ec2-54-69-150-119.us-west-2.compute.amazonaws.com/metflix/login.php");
+    p_metflix.setDescription("Provided streaming service by designing different web end-points including video and profile management. Provided cloud solution on AWS EC2 instance with server hosting through XAMPP. Developed a subscription system with PayPal API to distin- guish available contents to different users. Supported live search system using AJAX to dynamically load the result after query.");
+    this.projects.set('p_metflix', p_metflix);
+
+    let p_webBrowser = new Project();
+    p_webBrowser.setProjectImgPath('assets/img/webBrowser.gif');
+    p_webBrowser.setTitle("Web Browser Development");
+    p_webBrowser.setHasLink(true);
+    p_webBrowser.setLink("https://github.com/hsuyuching/webbrowserinternals");
+    p_webBrowser.setDescription("Created GUI window by Tkinter and handled URL connection through BSD socket interface. Converted HTML tokens into DOM tree which supports attributes and malformed tags. Enable CSS styling by using inheritance and privilege level to determine the object style. Supported basic JavaScript with DukPy interpreter and allowed scripts to modify page elements.");
+    this.projects.set('p_webBrowser', p_webBrowser);
+
+
+
+
     p6.setProjectImgPath('assets/img/project6-logo.png');
     p5.setProjectImgPath('assets/img/project5-logo.png');
     p4.setProjectImgPath('assets/img/project4-logo.png');
@@ -26,7 +45,7 @@ export class ProjectComponent implements OnInit {
     p2.setProjectImgPath('assets/img/project2-logo.png');
     p1.setProjectImgPath('assets/img/project1-logo.png');
 
-    p1.setTitle('Image Quality Analysis Tool');
+    p1.setTitle('Real-time Data Visualization Platform');
     p2.setTitle('Auto Recognition for Elevator Button with CNN');
     p3.setTitle('Paired Face Detection for Multi-Camera');
     p4.setTitle('Missing Migrants Data Visualization');
@@ -40,12 +59,16 @@ export class ProjectComponent implements OnInit {
     p2.setDescription('We designed the algorithm, which can localize (with 95.8% accuracy) and recognize (with 100% accuracy) the button with combining of PAC, KBC, TM, CNN and finally, SSIM. With the method, we can strengthen the robot indoor navigation ability.');
     p1.setDescription('Developed Logitech\'s internal analysis tool for image quality team to better control auto focus, auto white balance, auto exposure. Achieved real-time manipulation in video between hardware control and software visualization.');
 
-    p1.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
-    // p2.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    p1.setLink('https://www.youtube.com/embed//IKfHjiEIFts');
+    p2.setLink('https://hsuyuching.github.io/IAENG_IJCS.pdf');
     // p3.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
-    // p4.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+    p4.setLink('https://hsuyuching.github.io/missing-migrants/');
+    p4.setHasLink(true);
     // p5.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
     // p6.setLinks('https://hsuyuching.github.io/missing-migrants/', 'proj');
+
+    p1.setHasLink(true);
+    p2.setHasLink(true);
 
 
     this.projects.set('p6', p6);
@@ -65,7 +88,8 @@ class Project {
   projectImgPath: string;
   title: string;
   description: string;
-  links = [];
+  hasLink = false;
+  link: string;
 
   setProjectImgPath(projectImgPath: string) {
     this.projectImgPath = projectImgPath;
@@ -85,13 +109,16 @@ class Project {
   getDescription() {
     return this.description;
   }
-  setLinks(link: string, linkName: string) {
-    this.links.push({
-      'link': link,
-      'linkName': linkName
-    });
+  setHasLink(hasLink: boolean){
+    this.hasLink = hasLink;
   }
-  getLinks() {
-    return this.links;
+  getHasLink(){
+    return this.hasLink;
+  }
+  setLink(link: string){
+    this.link = link;
+  }
+  getLink(){
+    return this.link;
   }
 }
